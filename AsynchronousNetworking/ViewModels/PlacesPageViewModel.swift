@@ -69,7 +69,6 @@ final class PlacesPageViewModel: ObservableObject {
                 }
             }, receiveValue: { locations in
                 self.locations = locations
-                print(locations)
             })
             .store(in: &cancellables)
     }
